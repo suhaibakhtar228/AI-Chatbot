@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #080b12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 550px;
+    background-color: #111827;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #263653;
+    box-shadow: 0 0 20px rgba(35, 90, 200, 0.15);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #4385ff;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #aab5c7;
+    font-size: 14px;
+}
+
+.chat-box {
+    height: 350px;
+    overflow-y: auto;
+    background-color: #080d18;
+    border: 1px solid #263653;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.user-message {
+    background-color: #1748a0;
+    color: white;
+    padding: 11px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.bot-message {
+    background-color: #1c293d;
+    color: #dce8f8;
+    padding: 11px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 3px solid #a4e637;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    background-color: #080d18;
+    color: white;
+    border: 1px solid #344968;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4385ff;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #2865d8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1748a0;
+}
+
+button:disabled {
+    background-color: #526078;
+    cursor: not-allowed;
+}
+
+.footer {
+    text-align: center;
+    color: #a4e637;
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 15px;
+    }
+
+    .chat-box {
+        height: 400px;
+    }
+
+    button {
+        padding: 12px 15px;
+    }
+}
