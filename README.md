@@ -8,7 +8,6 @@ AI Buddy is a simple AI-powered chatbot developed using HTML, CSS, and JavaScrip
 - AI-powered responses using Gemini API
 - Chat history during the current session
 - Responsive design
-- Dark theme with blue and green accents
 
 ## Technologies Used
 
